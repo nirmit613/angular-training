@@ -6,6 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-
+navbarList = [
+  {
+    title: "Today's Deal",
+    link: "#"
+  },
+  {
+    title: "Electronics",
+    link: "#"
+  },
+  {
+    title: "Customer Service",
+    link: "#"
+  },
+  {
+    title: "About",
+    link: "#"
+  }
+]
 }
 
