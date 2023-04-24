@@ -1,4 +1,38 @@
-// .btn{
-//     margin-right: 1rem;
-//     width: 10rem;
-// }
+.btn {
+  background-color: #3c373c;
+  border: none;
+  margin-top: 0.5rem;
+}
+#sidebar-button {
+  position: absolute;
+  top: 8%;
+  right: 3%;
+  color: whitesmoke;
+  margin: 0.5rem;
+}
+.offcanvas-header {
+  background-color: #3c373c;
+  color: whitesmoke;
+}
+.offcanvas-header > h3 {
+  margin-top: 0.5rem;
+}
+.btn-close {
+  background-color: whitesmoke;
+}
+.offcanvas-body {
+  overflow-y: hidden;
+}
+
+.offcanvas-body a {
+  padding: 0.5rem 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .sidebar-container {
+    display: inline;
+  }
+  .list-group {
+    display: none;
+  }
+}

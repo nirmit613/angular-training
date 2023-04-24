@@ -26,6 +26,16 @@ export class FooterComponent {
       title: 'BacancyBookShop.com',
     },
   ];
-  public emailValid: string = ' ';
-  
+  // Email validation
+  public emailValid: string = '';
+  public emailRegex: RegExp = /^\w+([\.\-]?\w+)*@\w+([\.\-]?\w+)*(\.\w{2,})+$/;
+
+  public validEmail(): void {
+    if (this.emailRegex.test(this.emailValid)) {
+      alert('Thank you for subscribe.... ;)');
+    } else {
+      alert('Please Enter valid email address for subscribe..');
+    }
+    this.emailValid = '';
+  }
 }

@@ -1,0 +1,42 @@
+<link
+  rel="stylesheet"
+  href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
+/>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+<body>
+  <div class="container">
+    <div class="form-group">
+      <h2>Add <small>Your Name</small></h2>
+      <form role="form">
+        <input
+          type="text"
+          class="form-control"
+          type="text"
+          placeholder="Enter Name"
+          maxlength="40"
+          [(ngModel)]="newName"
+          [ngModelOptions]="{ standalone: true }"
+          required
+        />
+      </form>
+      <button type="button" class="btn btn btn-primary" (click)="addName()">
+        {{ addButton }}
+      </button>
+      <br />
+      <br />
+      <ul *ngFor="let data of data" class="data">
+        <li>
+          {{ data.name }}
+          <button (click)="deleteName(data.id)" type="submit" class="delete">
+            {{ deleteButton }}
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>

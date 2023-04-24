@@ -1,37 +1,39 @@
-<button
-  class="btn btn-primary"
-  type="button"
-  data-bs-toggle="offcanvas"
-  data-bs-target="#offcanvasWithBothOptions"
-  aria-controls="offcanvasWithBothOptions"
->
-  <i class="fa-solid fa-sidebar"></i>
-</button>
+<div class="sidebar-container">
+  <button
+    class="btn btn-primary"
+    type="button"
+    data-bs-toggle="offcanvas"
+    data-bs-target="#offcanvasWithBothOptions"
+    aria-controls="offcanvasWithBothOptions"
+    id="sidebar-button"
+  >
+    <span><i class="fa-solid fa-angle-left fa-lg"></i></span>
+  </button>
 
-<div
-  class="offcanvas offcanvas-start"
-  data-bs-scroll="true"
-  tabindex="-1"
-  id="offcanvasWithBothOptions"
-  aria-labelledby="offcanvasWithBothOptionsLabel"
->
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-      Your List
-    </h5>
-    <button
-      type="button"
-      class="btn-close"
-      data-bs-dismiss="offcanvas"
-      aria-label="Close"
-    ></button>
-  </div>
-  <div class="offcanvas-body">
-    <ol>
-      <li>Hello</li>
-      <li>Hello</li>
-      <li>Hello</li>
-      <li>Hello</li>
-    </ol>
+  <div
+    class="offcanvas offcanvas-start"
+    data-bs-scroll="true"
+    tabindex="-1"
+    id="offcanvasWithBothOptions"
+    aria-labelledby="offcanvasWithBothOptionsLabel"
+  >
+    <div class="offcanvas-header">
+      <h3 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+        Sidebar
+      </h3>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="offcanvas-body">
+      <a href="#" class="list-group-item list-group-item-action">Link 1</a>
+      <a href="#" class="list-group-item list-group-item-action">Link 2</a>
+      <a href="#" class="list-group-item list-group-item-action">Link 3</a>
+      <a href="#" class="list-group-item list-group-item-action">Link 4</a>
+      <a href="#" class="list-group-item list-group-item-action">Link 5</a>
+    </div>
   </div>
 </div>
