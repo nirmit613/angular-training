@@ -1,18 +1,25 @@
 $card-height: 100%;
-.render{
-    text-align: center;
-    padding: 0.5rem;
-    margin:1rem;
+.render {
+  text-align: center;
+  padding: 0.5rem;
+  margin: 1rem;
 }
-a{
-    text-decoration: none;
-    text-align: center;
-    padding: 0.5rem;
-    color: whitesmoke;
+a {
+  text-decoration: none;
+  text-align: center;
+  padding: 0.5rem;
+  color: whitesmoke;
 }
-button{
-    background-color: #3c373c;
-    border-radius: 4px ;
-    height: 45px;
-    width: 120px;
+button {
+  background-color: #3c373c;
+  border-radius: 4px;
+  height: 45px;
+  width: 120px;
+}
+.card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
