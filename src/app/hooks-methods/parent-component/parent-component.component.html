@@ -1,0 +1,18 @@
+<p>parent-component works!</p>
+<h3>{{ childDataReceived }}</h3>
+
+<h3>@ViewChild using Component in Angular</h3>
+<b> Stopwatch </b>
+<button type="button" class="btn btn-primary" (click)="startStopwatch()">
+  Start
+</button>
+
+<button type="button" class="btn btn-secondary" (click)="stopStopwatch()">
+  Stop
+</button>
+<br />
+<hr />
+<app-child-component [name]="'Nirmit@613'" (emitData)="dataReceiver($event)"
+  ><p #paragraphElement>Hello... from ng-content</p>
+  <br /><br />
+</app-child-component>

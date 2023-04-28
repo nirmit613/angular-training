@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
 export class MainComponent {
   public booksList = [
     {
-      imageUrl: 'assets/cardOne.jpg',
+      imageUrl:
+        'https://cdn.pixabay.com/photo/2015/11/19/21/10/glasses-1052010_960_720.jpg',
       title: 'BookOne',
       author: 'Nirmit Valand',
       description:
@@ -17,7 +18,8 @@ export class MainComponent {
       linkTitle: 'Read More',
     },
     {
-      imageUrl: 'assets/cardOne.jpg',
+      imageUrl:
+        'https://cdn.pixabay.com/photo/2015/11/19/21/10/glasses-1052010_960_720.jpg',
       title: 'BookTwo',
       author: 'Nirmit Valand',
       description:
@@ -26,7 +28,8 @@ export class MainComponent {
       linkTitle: 'Read More',
     },
     {
-      imageUrl: 'assets/cardOne.jpg',
+      imageUrl:
+        'https://cdn.pixabay.com/photo/2015/11/19/21/10/glasses-1052010_960_720.jpg',
       title: 'BookThree',
       author: 'Nirmit Valand',
       description:
@@ -35,7 +38,8 @@ export class MainComponent {
       linkTitle: 'Read More',
     },
     {
-      imageUrl: 'assets/cardOne.jpg',
+      imageUrl:
+        'https://cdn.pixabay.com/photo/2015/11/19/21/10/glasses-1052010_960_720.jpg',
       title: 'BookFour',
       author: 'Nirmit Valand',
       description:
@@ -44,7 +48,8 @@ export class MainComponent {
       linkTitle: 'Read More',
     },
     {
-      imageUrl: 'assets/cardOne.jpg',
+      imageUrl:
+        'https://cdn.pixabay.com/photo/2015/11/19/21/10/glasses-1052010_960_720.jpg',
       title: 'BookFive',
       author: 'Nirmit Valand',
       description:
@@ -53,7 +58,8 @@ export class MainComponent {
       linkTitle: 'Read More',
     },
     {
-      imageUrl: 'assets/cardOne.jpg',
+      imageUrl:
+        'https://cdn.pixabay.com/photo/2015/11/19/21/10/glasses-1052010_960_720.jpg',
       title: 'BookSix',
       author: 'Nirmit Valand',
       description:
