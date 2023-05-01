@@ -1,9 +1,10 @@
-<p>parent-component works!</p>
+<h3>parent-component works!</h3>
+
 <h3>{{ childDataReceived }}</h3>
 
 <h3>@ViewChild using Component in Angular</h3>
 <b> Stopwatch </b>
-<button type="button" class="btn btn-primary" (click)="startStopwatch()">
+<button type="button" class="btn btn-primary m-1" (click)="startStopwatch()">
   Start
 </button>
 
@@ -16,3 +17,9 @@
   ><p #paragraphElement>Hello... from ng-content</p>
   <br /><br />
 </app-child-component>
+<br /><br />
+<h4 appCustomDirectives color="blue">Custom Attribute Directives</h4>
+
+<div *appStructuralDirectives="true">
+  <p>Hello My name is Nirmit</p>
+</div>

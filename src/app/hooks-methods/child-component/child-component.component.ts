@@ -17,7 +17,7 @@ import {
   styleUrls: ['./child-component.component.scss'],
 })
 export class ChildComponentComponent
-  implements OnInit, OnChanges, AfterContentInit
+  implements OnInit, OnChanges, AfterContentInit 
 {
   constructor() {
     console.log('constructor is called');
@@ -37,7 +37,7 @@ export class ChildComponentComponent
   counterRun: boolean = false;
   counter: number = 0;
 
-  start() {
+  public start() {
     this.counterRun = true;
     let interval = setInterval(() => {
       if (this.counterRun === false) {
@@ -46,10 +46,10 @@ export class ChildComponentComponent
       this.counter = this.counter + 1;
     }, 1000);
   }
-  stop() {
+  public stop() {
     this.counterRun = false;
   }
-  // @ContentContent in angular
+  // @ContentChild in angular
   @ContentChild('paragraphElement') paragraphEl!: ElementRef;
 
   ngOnChanges(changes: SimpleChanges): void {
