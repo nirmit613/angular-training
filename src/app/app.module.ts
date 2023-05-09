@@ -7,6 +7,8 @@ import { CoreModule } from './core/core.module';
 import { CommonErrorModule } from './common-error/common-error.module';
 import { HooksMethodsModule } from './hooks-methods/hooks-methods.module';
 import { ServiceDemoModule } from './service-demo/service-demo.module';
+import { ReactiveFormModule } from './reactive-form/reactive-form.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,7 +18,9 @@ import { ServiceDemoModule } from './service-demo/service-demo.module';
     CommonErrorModule,
     HooksMethodsModule,
     ServiceDemoModule,
+    ReactiveFormModule,
     HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
