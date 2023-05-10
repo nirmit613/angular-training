@@ -9,6 +9,7 @@ import { HooksMethodsModule } from './hooks-methods/hooks-methods.module';
 import { ServiceDemoModule } from './service-demo/service-demo.module';
 import { ReactiveFormModule } from './reactive-form/reactive-form.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpDemoModule } from './http-demo/http-demo.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -21,6 +22,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     ReactiveFormModule,
     HttpClientModule,
     ReactiveFormsModule,
+    HttpDemoModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

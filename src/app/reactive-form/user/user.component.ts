@@ -6,7 +6,7 @@ import {
   FormArray,
   AsyncValidatorFn,
 } from '@angular/forms';
-import { Observable } from 'rxjs';
+import { Observable, debounceTime } from 'rxjs';
 
 @Component({
   selector: 'app-user',
@@ -49,9 +49,12 @@ export class UserComponent implements OnInit {
       remember: new FormControl(null, Validators.required),
       hobbies: new FormArray([]),
     });
-    this.userForm.valueChanges.subscribe((value) => {
-      console.log(value);
-    });
+    this.userForm
+      .get('email')
+      ?.valueChanges.pipe(debounceTime(300))
+      .subscribe((value) => {
+        console.log(value);
+      });
     this.userForm.statusChanges.subscribe((status) => {
       console.log(status);
     });
@@ -113,9 +116,9 @@ export class UserComponent implements OnInit {
     });
   }
 
-  validateControl(controlName:string,errorName:string){
+  validateControl(controlName: string, errorName: string) {
     let x = this.userForm.get(controlName)?.errors;
-    if(x) return x[errorName]
+    if (x) return x[errorName];
     else null;
   }
 }
