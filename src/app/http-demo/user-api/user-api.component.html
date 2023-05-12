@@ -55,14 +55,16 @@
         UpdateUser
       </button>
     </div>
-    <div class="form-actions">
-      <button
-        type="submit"
-        class="btn btn-danger"
-        (click)="deleteUser(userForm)"
-      >
-        DeleteUser
-      </button>
-    </div>
+    <ng-container *ngIf="users !== null">
+      <div class="form-actions" *ngFor="let user of users">
+        <button
+          type="submit"
+          class="btn btn-danger"
+          (click)="deleteUser(user.id)"
+        >
+          DeleteUser
+        </button>
+      </div>
+    </ng-container>
   </form>
 </div>
