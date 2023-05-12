@@ -56,7 +56,13 @@
       </button>
     </div>
     <div class="form-actions">
-      <button type="submit" class="btn btn-danger">DeleteUser</button>
+      <button
+        type="submit"
+        class="btn btn-danger"
+        (click)="deleteUser(userForm)"
+      >
+        DeleteUser
+      </button>
     </div>
   </form>
 </div>
