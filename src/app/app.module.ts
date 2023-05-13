@@ -11,6 +11,7 @@ import { ReactiveFormModule } from './reactive-form/reactive-form.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpDemoModule } from './http-demo/http-demo.module';
 import { TemplateDrivenModule } from './template-driven/template-driven.module';
+import { RouterDemoModule } from './router-demo/router-demo.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -26,6 +27,7 @@ import { TemplateDrivenModule } from './template-driven/template-driven.module';
     ReactiveFormsModule,
     HttpDemoModule,
     FormsModule,
+    RouterDemoModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
