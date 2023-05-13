@@ -1,0 +1,10 @@
+.header-product-details {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.header-product-details > button {
+  height: 40px;
+  width: 70px;
+}

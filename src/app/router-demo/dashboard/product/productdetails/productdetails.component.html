@@ -1,0 +1,26 @@
+<div class="p-4">
+  <div class="header-product-details">
+    <p class="mt-3">products-details page</p>
+    <button type="button" class="btn btn-dark btn-sm" (click)="closeDetails()">
+      close
+    </button>
+  </div>
+  <br />
+
+  <h3>Product Id from url : {{ productId }}</h3>
+  <h3>Product Id from url : {{ productName }}</h3>
+
+  <br />
+
+  <h5>
+    <!-- <a [routerLink]="['/products', '200', 'product-2']">reload page</a> -->
+
+    <!-- Passing Query params and Fragments using routerLink -->
+    <a
+      [routerLink]="['/products', '300', 'product-3']"
+      [queryParams]="{ isProductDetails: true }"
+      fragment="product-details-page-1"
+      >reload page</a
+    >
+  </h5>
+</div>

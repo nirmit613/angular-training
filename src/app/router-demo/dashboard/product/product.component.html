@@ -29,12 +29,16 @@
   </tbody>
 </table>
 <div class="btns">
-  <button type="button" class="btn btn-secondary">Go To Home</button>
-  <button type="button" class="btn btn-secondary">Go To Accounts</button>
+  <button type="button" class="btn btn-secondary" (click)="goToHome()">
+    Go To Home
+  </button>
+  <button type="button" class="btn btn-secondary" (click)="goToAccounts()">
+    Go To Accounts
+  </button>
 </div>
 
 <div class="product-details-btn">
-  <button type="button" class="btn btn-secondary">Go To Product Details</button>
+  <button type="button" class="btn btn-secondary" (click)="displayProducts()">Go To Product Details</button>
 </div>
 
 <router-outlet></router-outlet>
