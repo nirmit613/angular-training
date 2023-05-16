@@ -18,7 +18,7 @@
         <td>{{ students.name }}</td>
         <td>{{ students.course | titlecase }}</td>
         <td>{{ students.marks }}</td>
-        <td>{{ students.marks / totalMarks | percent : "1.2-2" }}</td>
+        <td>{{ students.marks | percentage : totalMarks : 2 }}</td>
         <td>{{ students.DOB | date : "fullDate" }}</td>
         <td>{{ students.fees | currency : "INR" }}</td>
         <td>{{ students.gender | lowercase }}</td>
