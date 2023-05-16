@@ -1,1 +1,28 @@
-<p>student-data works!</p>
+<div class="m-4">
+  <h2 class="text-center p-3">{{ title }}</h2>
+  <h3 class="text-center p-3">{{ heading }}</h3>
+  <table class="table table-bordered text-center">
+    <thead class="table-dark">
+      <tr>
+        <th>Name</th>
+        <th>Course</th>
+        <th>Marks</th>
+        <th>Percentage</th>
+        <th>DOB</th>
+        <th>Fees</th>
+        <th>Gender</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let students of students">
+        <td>{{ students.name }}</td>
+        <td>{{ students.course | titlecase }}</td>
+        <td>{{ students.marks }}</td>
+        <td>{{ students.marks / totalMarks | percent : "1.2-2" }}</td>
+        <td>{{ students.DOB | date : "fullDate" }}</td>
+        <td>{{ students.fees | currency : "INR" }}</td>
+        <td>{{ students.gender | lowercase }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
