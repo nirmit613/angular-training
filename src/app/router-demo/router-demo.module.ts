@@ -22,7 +22,7 @@ const appRoutes: Routes = [
   },
   { path: 'accounts', component: AccountComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  // { path: '**', component: PageNotFoundComponent },
+  { path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({
@@ -32,7 +32,6 @@ const appRoutes: Routes = [
     ProductComponent,
     AccountComponent,
     ProductdetailsComponent,
-    PageNotFoundComponent,
   ],
   imports: [CommonModule, RouterModule.forRoot(appRoutes)],
   exports: [

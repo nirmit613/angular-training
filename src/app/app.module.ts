@@ -12,6 +12,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpDemoModule } from './http-demo/http-demo.module';
 import { TemplateDrivenModule } from './template-driven/template-driven.module';
 import { RouterDemoModule } from './router-demo/router-demo.module';
+import { PipesDemoModule } from './pipes-demo/pipes-demo.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -28,6 +29,7 @@ import { RouterDemoModule } from './router-demo/router-demo.module';
     HttpDemoModule,
     FormsModule,
     RouterDemoModule,
+    PipesDemoModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
