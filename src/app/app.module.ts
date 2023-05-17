@@ -13,6 +13,7 @@ import { HttpDemoModule } from './http-demo/http-demo.module';
 import { TemplateDrivenModule } from './template-driven/template-driven.module';
 import { RouterDemoModule } from './router-demo/router-demo.module';
 import { PipesDemoModule } from './pipes-demo/pipes-demo.module';
+import { RxJsDemoModule } from './rx-js-demo/rx-js-demo.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -30,6 +31,7 @@ import { PipesDemoModule } from './pipes-demo/pipes-demo.module';
     FormsModule,
     RouterDemoModule,
     PipesDemoModule,
+    RxJsDemoModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
