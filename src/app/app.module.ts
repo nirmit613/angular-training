@@ -14,6 +14,7 @@ import { TemplateDrivenModule } from './template-driven/template-driven.module';
 import { RouterDemoModule } from './router-demo/router-demo.module';
 import { PipesDemoModule } from './pipes-demo/pipes-demo.module';
 import { RxJsDemoModule } from './rx-js-demo/rx-js-demo.module';
+import { ObservablesDemoModule } from './observables-demo/observables-demo.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -32,6 +33,7 @@ import { RxJsDemoModule } from './rx-js-demo/rx-js-demo.module';
     RouterDemoModule,
     PipesDemoModule,
     RxJsDemoModule,
+    ObservablesDemoModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
