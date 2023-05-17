@@ -171,7 +171,7 @@ export class OperatorsComponent implements OnInit, OnDestroy {
         catchError((error) => {
           return of({});
         }),
-        tap(() => console.log('Searching......'))
+        tap(() => console.log('Searching..!'))
       );
     }
     return of({});
