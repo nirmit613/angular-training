@@ -8,7 +8,97 @@
   </div>
   <hr />
   <div class="text-center">
-    <button type="button" class="btn btn-secondary">From Operator</button>
+    <button type="button" class="btn btn-secondary" (click)="fromOperator()">
+      From Operator
+    </button>
+  </div>
+  <hr />
+  <div class="text-center">
+    <button type="button" class="btn btn-info" (click)="concateWithOperator()">
+      ConcatWith Operator
+    </button>
+  </div>
+  <hr />
+  <div class="text-center">
+    <button type="button" class="btn btn-warning" (click)="mergeOperator()">
+      Merge Operator
+    </button>
+  </div>
+  <hr />
+  <div class="text-center">
+    <button type="button" class="btn btn-primary" (click)="mapOperator()">
+      Map Operator
+    </button>
+  </div>
+  <hr />
+  <div class="text-center">
+    <button
+      type="button"
+      class="btn btn-secondary"
+      (click)="concatMapOperator()"
+    >
+      ConcatMap Operator
+    </button>
+  </div>
+  <hr />
+  <div class="text-center">
+    <button type="button" class="btn btn-info" (click)="mergeMapOperator()">
+      MergeMap Operator
+    </button>
+  </div>
+  <hr />
+  <div class="text-center">
+    <button type="button" class="btn btn-warning" (click)="switchMapOperator()">
+      SwitchMap Operator
+    </button>
+  </div>
+  <hr />
+  <div class="text-center">
+    <button type="button" class="btn btn-primary" (click)="takeOperator()">
+      Take Operator
+    </button>
+  </div>
+  <hr />
+  <div class="text-center">
+    <button
+      type="button"
+      class="btn btn-secondary"
+      (click)="takeUntilOperator()"
+    >
+      TakeUntil Operator
+    </button>
+  </div>
+  <hr />
+  <div class="text-center">
+    <button type="button" class="btn btn-info" (click)="forkJoinOperator()">
+      ForkJoin Operator
+    </button>
+  </div>
+  <hr />
+  <div class="text-center">
+    <button type="button" class="btn btn-warning" (click)="shareRepOperator()">
+      shareReplay Operator
+    </button>
+  </div>
+  <hr />
+  <div class="text-center">
+    <button
+      type="button"
+      class="btn btn-primary"
+      disabled
+      (click)="forkJoinOperator()"
+    >
+      Debounce Time Operator
+    </button>
+    <div class="textArea">
+      <input
+        type="text"
+        [(ngModel)]="searchText"
+        placeholder="Search breed"
+        (keyup)="search()"
+      />
+      {{ breeds$ | async | json }}
+    </div>
   </div>
   <hr />
 </div>
